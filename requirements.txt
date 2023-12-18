@@ -1,0 +1,6 @@
+-e .
+pandas
+numpy
+flask
+seaborn
+ # It is used to trigger setup.py to make all the folder as package
