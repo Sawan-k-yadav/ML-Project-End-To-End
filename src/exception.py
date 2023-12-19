@@ -1,13 +1,13 @@
 import sys
-import logging
+from src.logger import logging
 
 
 # This function will be used to log the custom error if we are getting any inside the project
 def error_message_detail(error, error_detail:sys):
     _,_,exc_tb=error_detail.exc_info()   # error_detail.exc_info() will give error detail and it will be store exc_tb variable to get error file name, error message, error line
     file_name=exc_tb.tb_frame.f_code.co_filename # for getting file name
-    error_message="Error occured in Python script name [{0}] line number [{1}] error message [{2}]".format(  # These [{0}], [{1}], [{2}] are placeholder for message to display seperated way
-    file_name,exc_tb.tb_lineno,str(error))
+    error_message="Error occured in Python script name [{0}] line number [{1}] error message [{2}]".format(  
+     file_name,exc_tb.tb_lineno,str(error)) # These [{0}], [{1}], [{2}] are placeholder for message to display seperated way
 
     return error_message
 
