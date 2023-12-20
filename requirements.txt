@@ -4,4 +4,8 @@ numpy
 flask
 seaborn
 matplotlib
+scikit-learn
+catboost
+xgboost
+pytest-warnings
  # -e . is used to trigger setup.py to make all the folder as package
