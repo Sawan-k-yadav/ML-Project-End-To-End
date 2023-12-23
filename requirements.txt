@@ -8,4 +8,5 @@ scikit-learn
 catboost
 xgboost
 pytest-warnings
+dill
  # -e . is used to trigger setup.py to make all the folder as package
